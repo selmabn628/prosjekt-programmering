@@ -25,3 +25,8 @@ Du bør vise hvordan du faktisk henter, leser og visualiserer dataene (f.eks. fr
 •	Utforsker og visualiserer dataene med matplotlib eller andre verktøy.
 •	Eventuelt integrerer data fra API-er, dersom oppgaven krever det.
 Husk å dokumentere alle trinnene i prosessen i rapporten din, inkludert hvilke datakilder du har valgt, hvorfor du valgte dem, hvordan du hentet og behandlet dataene, og hvilke teknikker du brukte for analyse og visualisering.
+
+
+
+kilde
+til laks: OpenAI. (2025). Veiledning i JSON-datahåndtering og Pandas-konvertering. Hentet fra ChatGPT.
