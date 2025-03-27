@@ -9,10 +9,15 @@ Håndtering av manglende verdier
 Datasettet kan inneholde noen uker der det ikke er registrert eksport av hverken fersk eller frosset laks. For å sikre at analysene baserer seg på meningsfulle og komplette datapunkter, har vi fjernet rader som mangler informasjon om eksportert vekt. Ved å gjøre dette unngår vi at analyser og beregninger baserer seg på tomme eller ufullstendige verdier. 
 Selv om det ikke ble funnet manglende verdier i dette datasettet, har vi implementert kode som identifiserer og filtrerer bort ufullstendige rader. Dette er viktig for å sikre robusthet ved fremtidige kjøringer eller utvidelser av datasettet.
 
+Identisfisering av tapte verdier i et datasett kan man bruke Pandas biblioteket, som da gir tilbake om datasettet har null-verdier. Her vil koden returnere og dataen er falsk eller sann for om verdiene er nullverdier. Det er også mulig å fjerne rader med null-verdier, eller ta et gjennomsnitt av verdien over og under null-verdien og legge inn det istedenfor null-verdien.
+Man bruker .isnull() funksjonen fra Pandas for å sjekke om verdiene du får er null-verdier. Det kommer True der det er null-verdier og False der verdiene er korrekte tall. https://www.geeksforgeeks.org/python-pandas-isnull-and-notnull/ 
+Siden det ikke var noen null-verdier har det vært mulig å legge inn tilfeldige nullverdier I hver kolonne. Det går an å justerer hvor ofte man vil dette skal skje, det er 10 % som er lagt inn som frekvens i koden. 
+Jeg har brukt .isnull() og .dropna() funksjoner for å isdentifisere null-verdi rader og deretter fjerne dem. Etter dette har jeg brukt dette datasettet som er renset til å visualisere resultatet over fersk og frossen laks i en graf.
+
 Bruk av list comprehensions
 For å behandle den komplekse og hierarkiske JSON-strukturen vi får fra SSB sitt API, har vi brukt list comprehensions til å hente ut og kombinere verdiene fra flere dimensjoner. Dette gjør det mulig å effektivt bygge opp en fullstendig datastruktur med alle relevante kombinasjoner av uke, laksetype og måleenhet. Det gjør prosessen mer effektiv og lesbar enn alternative løsninger med løkker.
 
-Ved bruk av Lambda funksjoner kan man manipulerer dataene
+Ved bruk av Lambda funksjoner kan man manipulerer dataene.
 Ved bruk av “apply” funksjonen når man bruker lambda kan man eksempelvis legge til to nye kolonner med nye verdier, her har jeg lagt til nye kolonner for kilopris og vekt av fersk laks. 
 Videre har jeg valgt å bruke en lambda funksjon til å lage en if-setning som sier noe om laksen er dyr eller billig. Her har jeg bestemt at alt over 90 kr er dyrt, prisen over medianprisen er normal (45 kr), og resten er billig. 
 
