@@ -12,6 +12,11 @@ Selv om det ikke ble funnet manglende verdier i dette datasettet, har vi impleme
 Bruk av list comprehensions
 For å behandle den komplekse og hierarkiske JSON-strukturen vi får fra SSB sitt API, har vi brukt list comprehensions til å hente ut og kombinere verdiene fra flere dimensjoner. Dette gjør det mulig å effektivt bygge opp en fullstendig datastruktur med alle relevante kombinasjoner av uke, laksetype og måleenhet. Det gjør prosessen mer effektiv og lesbar enn alternative løsninger med løkker.
 
+Ved bruk av Lambda funksjoner kan man manipulerer dataene
+Ved bruk av “apply” funksjonen når man bruker lambda kan man eksempelvis legge til to nye kolonner med nye verdier, her har jeg lagt til nye kolonner for kilopris og vekt av fersk laks. 
+Videre har jeg valgt å bruke en lambda funksjon til å lage en if-setning som sier noe om laksen er dyr eller billig. Her har jeg bestemt at alt over 90 kr er dyrt, prisen over medianprisen er normal (45 kr), og resten er billig. 
+
+
 Bruk av Pandas SQL (sqldf)
 Selv om pandas har kraftige funksjoner for aggregering og gruppering, har vi valgt å benytte pandasql for å utføre deler av datamanipuleringen. Dette gir muligheten til å bruke SQL-syntaks direkte på pandas-data, noe som gjør enkelte operasjoner — som gruppering og summering — enklere å skrive og lese, særlig for dem som er vant til SQL. Dette gir bedre lesbarhet og struktur når man for eksempel skal oppsummere CO₂-utslipp per uke og laksetype.
 
