@@ -8,7 +8,7 @@ Vi har valgt å bruke data fra Miljødirektoratet ([lenke](https://www.miljodire
 
 Grunnen til dette er at:
 
-Dette er en pålitelig kilde da den er styrt av statlige aktører. Ststen støtter medier som de ønsker at skal videreformidle informasjonen sin. samtidig så er denne nettsiden faglig uavhengig derfor er det deres egen forskning og kunnskap som de videreformidler. 
+Dette er en pålitelig kilde da den er styrt av statlige aktører. Staten støtter medier som de ønsker at skal videreformidle informasjonen sin. samtidig så er denne nettsiden faglig uavhengig derfor er det deres egen forskning og kunnskap som de videreformidler. 
 
 Vi har valgt å laste ned datafilen som en CSV-fil for å deretter importere dataene inn i vscode og mappen. Nettsiden tilbyr å laste ned dataene fra grafen som en CSV-fil, derfor gjorde vi dette.
 
