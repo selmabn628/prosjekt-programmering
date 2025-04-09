@@ -4,3 +4,4 @@ pandas
 numpy
 pandasql
 requests
+plotly
