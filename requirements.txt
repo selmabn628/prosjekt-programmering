@@ -4,4 +4,9 @@ pandas
 numpy
 pandasql
 requests
+scikit-learn
+=======
 plotly
+nbformat
+bokeh
+>>>>>>> origin/main

@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environments
+env/
+venv/
+ENV/
+env.bak/
+.venv/
+
+# VSCode settings
+.vscode/
+
+# Data files (optional – kommenter ut om du vil ha med enkelte)
+*.csv
+*.tsv
+*.json
+*.xlsx
+*.xls
+
+# Mac/Windows system files
+.DS_Store
+Thumbs.db
+
+# Output files
+*.log
+*.out
+*.bak
+*.pkl
+*.h5
+
+# Pytest cache
+.pytest_cache/
+
+.DS_Store
