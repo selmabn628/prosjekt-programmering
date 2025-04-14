@@ -1,33 +1,20 @@
-Hvorfor det er viktig å regne ut median, gjennomsnitt og standardavvik er fordi:
+##Oppgave 4 Dataanalyse
 
-median:
-- viser midten av datasettet
-- det kan være tall som påvirker snittet
-- median er et representativt statistisk virkemiddel fordi den viser en mer konkret fordeling av dataen i datasettet.
-- Median påvirkes heller ikke liker mye av ekstreme verdier som det gjennomsnitt gjør.
-- Halvparten er data som er over median og den andre halvpart er data som er under median. 
-- man kan sammenligne median og gjennomsnitt og se om dataene er skjeve eller ikke ved å se på om det er store forskjeller mellom dem.
+⚪️ Median viser akkurat midten av et datasett som er sortert fra minst til størst. Median er veldig representativ som et statistisk måleverktøy fordi den viser mer konkret fordeling av dataen i datasettet. Verdien påvirkes ikke like mye av ekstreme verdier slik som gjennomsnitt. Sammenligner man median og gjennomsnitt kan man se etter skjevheter i datasettet og se på om det er store forskjeller. Gjennomsnittet for fersk laksevekt er 13042 og standardavviket er 13550, da tyder dette på at det er minimale skjevheter når disse tallene er veldig like og tyder på at dataene er pålitelige.
 
+⚪️ Gjennomsnitt er en viktig statistisk måling fordi den representerer den mest typiske verdien og den som ofte er gjentakende i et datasett. Dette kan gi en rask indikasjon der man vet omtrentlig hvor for eksempel prisen kan ligge. Vet man gjennomsnittsprisen kan man tenke at prisen for en dag ligger omtrentlig over eller under gjennomsnittsverdien. Den er sårbar for ekstreme verdier, om det er et unormalt høyt tall for prisen påvirker dette gjennomsnittet og dytter verdien opp.
 
-gjennomsnitt er en viktig statistikk måling fordi 
-- representerer den mest typiske og gjentakende verdi i et datasett
-- kan gi en rask indikasjon på hvor for eksempel prisen på laks ligger
-- når gjennomsnittet på prisen på fersk laks omtrent er 45 kroneer, kan man tenke at prisen i dag ligger omtrent over eller under dette tallet.
-- gjennomsnitt kan også bli ngativt påvirket av ekstreme verdier som hender sjeldnere. 
+⚪️ Standardavvik viser hvor stor variasjon det er i dataene og er viktig for å se hvor høyt eller lavt en verdi kan bli. I filen "Dataanalyse", ser man at standardavviket generelt for fersk laks kilopris er 23 og dette indikerer et høyt tall sammenlignet med gjennomsnittet fordi lakseprisen kan variere opp og ned med denne verdien for ulike uker. Det samme kan man se for frosset laksevekt, da gjennomsnittet er omtrent 600 og standardavviket er omtrent 300. Dette betyr at i forhold til gjennomsnittet kan vekten svinge opp og ned med halvparten. Som tdiligere nevnt så er det et stort avvik for fersk laksevekt også da den er på omtrent 5700, noe som er mye i forhold til gjennomsnittet. 
 
-
-standardavvik:
-- Standardavvik viser hvor stor variasjon det er i dataene og er et viktig statistisk virkemiddel.
-- Når standardavviket på kiloprisen ti fersk laks er 23, betyr det at kiloprisen kan variere opp og ned med 23. Dette er et ganske høyt tall å variere med sammenlignet med at gjennomsnittet er 45. Dette viser at prisene svinger en del for hver uke som går. 
-
-Det er et stort avvik på vekten av fersk laks, og vekten av frossen laks. Avviket for fersk laks er rundt 5800 og avviket for frossen laks er rundt 305. Dette viser stor variasjon i verdiene for de to ulike typene av laks, og viser at den ferske laksen er mye mer ustabil og vanskeligere å framse. 
-
-
+Når disse statistke verdiene er veldig ulike tyder dette på at det er ustabile data og vanskeligere å predikere for framtidig analyse.
 Det er en positiv skjevhet mellom gjennomsnittet og median for kiloprisen av fersk laks. Da medianen er lavere enn gjennomsnittet som betyr at når det er noen uker med veldig høy kilopris trekker gjennomsnittet oppover.
 
 
-Fra chat
-"For å håndtere skjevheter i dataene, vil jeg sammenligne median og gjennomsnitt, og bruke visualiseringer og bruke unittesting for å sikre at funksjonene som behandler dataene fungerer som de skal." skriv om
+
+
+
+
+##Oppgave 5 Visualisering
 
 analysen:
 Grafen for vekten av eksport og kilopris av fersk laks viser en negativ lineær sammenheng. Dette antyder at et større eksportvolum henger sammen med lavere pris, noe som kan forklares av tilbud og etterspørsel. Prikkene rundt regresjonslinjen viser spredningen i dataene, avvikene, noen uker har større avvik enn andre og dette kan representere sesongvariasjon eller andre hendelser som toll.
