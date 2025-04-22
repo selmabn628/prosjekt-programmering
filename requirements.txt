@@ -7,3 +7,4 @@ requests
 plotly
 nbformat
 bokeh
+scikit-learn
