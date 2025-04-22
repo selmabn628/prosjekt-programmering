@@ -15,7 +15,7 @@ En positiv korrelasjon på begge valutakursene (EUR/NOK og USD/NOK) med kilospri
 Det ble funnet en sterk positiv korrelasjon mellom EUR/NOK og kilospris, særlig for fersk laks (r ≈ 0.87). USD/NOK hadde også en positiv, men svakere korrelasjon. Den sterkere korrelasjonen med EUR/NOK kan tyde på at prisen på frosset laks har en større følsomhet for endringer i euroen enn for USD. Dette kan være relatert til at eurosonen er en større handelspartner for Norge når det gjelder sjømat, og derfor har euroen en mer direkte påvirkning på prisene på laks enn USD.
 
 Søylediagram:
-Søylediagrammet ble brukt til å sammenligne dataene for fersk og frosset laks i et spesifikt år (2020), noe som gjorde det lettere å se prisforskjellene mellom de to. Søylediagrammer er nyttige for å sammenligne forskjellige grupper (i dette tilfellet, prisene på fersk vs frosset laks) over tid eller på tvers av forskjellige kategorier.
+Søylediagrammet ble brukt til å sammenligne dataene for fersk og frosset laks i et spesifikt år (2010), noe som gjorde det lettere å se prisforskjellene mellom de to. Søylediagrammer er nyttige for å sammenligne forskjellige grupper (i dette tilfellet, prisene på fersk vs frosset laks) over tid eller på tvers av forskjellige kategorier.
 Håndtering av manglende data:
 
 Vi håndterte manglende data på to måter:
