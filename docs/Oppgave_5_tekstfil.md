@@ -21,3 +21,8 @@ Plotly er brukt til å lage interaktive linjediagrammer. Plotly gir muligheten t
 Evaluering av effektiviteten:
 
 Effektiviteten til visualiseringene har blitt evaluert ved å vurdere hvor lett det er for brukerne å forstå sammenhengene i dataene og hvordan de viktigste funnene presenteres. Interaktive visualiseringer gir bedre tilgjengelighet, ettersom brukerne kan utforske dataene på egen hånd, mens statiske diagrammer gir et mer oversiktlig bilde av de viktigste trendene. Visualiseringene er designet for å være enkle å forstå for både tekniske og ikke-tekniske brukere, og klart merking og intuitiv grafikk hjelper med formidling.
+
+
+
+analysen:
+Grafen for vekten av eksport og kilopris av fersk laks viser en negativ lineær sammenheng. Dette antyder at et større eksportvolum henger sammen med lavere pris, noe som kan forklares av tilbud og etterspørsel. Prikkene rundt regresjonslinjen viser spredningen i dataene, avvikene, noen uker har større avvik enn andre og dette kan representere sesongvariasjon eller andre hendelser som toll.
