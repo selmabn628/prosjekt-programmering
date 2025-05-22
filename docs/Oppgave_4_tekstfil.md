@@ -8,7 +8,7 @@ For å forstå datakvaliteten og variasjonen i datasettet, har vi beregnet:
 - Gjennomsnitt, for å se den generelle utviklingen i prisnivået.
 - Median, som gir et mer robust bilde i tilfelle ekstreme verdier.
 - Standardavvik, for å måle spredning og volatilitet i prisene.
-Vi har analysert denne statistikken både for kr/kg for fersk og frosset laks hvert år, samt prisforskjell per årstid for å se om vi finner en tydelig sesongvariasjon. 
+Vi har analysert denne statistikken både for kr/kg for fersk og frosset laks hvert år, samt prisforskjell per årstid for å se om vi finner en tydelig sesongvariasjon. Disse analysene er viktige å foreta for å lettere kunne forutsi fremtidig kg-pris og antall tonn eksport av laks. 
 
 Håndtering av datastruktur og skjevheter:
 
