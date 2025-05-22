@@ -14,6 +14,19 @@ Man bruker .isnull() funksjonen fra Pandas for å sjekke om verdiene du får er 
 Siden det ikke var noen null-verdier har det vært mulig å legge inn tilfeldige nullverdier I hver kolonne. Det går an å justerer hvor ofte man vil dette skal skje, det er 10 % som er lagt inn som frekvens i koden. 
 Jeg har brukt .isnull() og .dropna() funksjoner for å isdentifisere null-verdi rader og deretter fjerne dem. Etter dette har jeg brukt dette datasettet som er renset til å visualisere resultatet over fersk og frossen laks i en graf.
 
+
+------------------------------For filen Datarensing_nullverdier.ipynb
+For å undersøke og håndtere ufullstendige data i datasettet, simulerte vi 10 000 tilfeldige NaN-verdier fordelt over flere kolonner. I tillegg la vi inn 2000 målrettede NaN-verdier i kolonnen «Fersk laks – Kilospris» for å teste hvordan slike feil påvirker analyseresultatet. Dette illustrerer hvordan datakvalitet kan påvirkes av manglende rapportering, systemfeil eller overføringsproblemer.
+
+Ved hjelp av df.isnull().sum() kartla vi manglende verdier, og brukte deretter fillna() til å gjenopprette disse verdiene med data fra en bevart kopi av det opprinnelige datasettet. På denne måten kunne vi sammenligne datasettet før og etter opprydning, og sikre at de opprinnelige strukturene ble beholdt.
+
+I visualiseringen ser vi tydelig at datasettet med feil gir en mer hakkete og ujevn kurve, mens det gjenopprettede datasettet fremstår glatt og konsistent. Dette demonstrerer hvordan effektiv bruk av Pandas-metoder kan forbedre datakvaliteten og gjøre analysen mer pålitelig.
+
+Man kunne brukt median for å fylle tilbake tapte verdier, men vi valgte å ikke gjøre det fordi vi har verdiene fra originaldataen.
+-------------------------------
+
+
+
 Bruk av list comprehensions
 For å behandle den komplekse og hierarkiske JSON-strukturen vi får fra SSB sitt API, har vi brukt list comprehensions til å hente ut og kombinere verdiene fra flere dimensjoner. Dette gjør det mulig å effektivt bygge opp en fullstendig datastruktur med alle relevante kombinasjoner av uke, laksetype og måleenhet. Det gjør prosessen mer effektiv og lesbar enn alternative løsninger med løkker.
 
