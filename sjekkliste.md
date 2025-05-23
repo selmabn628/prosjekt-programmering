@@ -6,7 +6,7 @@ checklist_md = """
 # ✅ Prosjekt-sjekkliste
 
 ## 📊 Visualisering
-- [x] Lag histogram eller boxplot for å visualisere statistikken.
+- [x] Lag histogram eller boxplot for å visualisere statistikken. ja
 - [x] Forbedre scatterplotet med farger, linjer og labels.
 - [x] Lag søylediagram.
 - [x] Legg til én interaktiv graf (valgfritt).
