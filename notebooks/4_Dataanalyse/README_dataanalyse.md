@@ -35,7 +35,6 @@ Vi vil videre lage følgende visualiseringer for å støtte analysen:
 Disse visualiseringene gjør det enkelt å identifisere trender og forklare funnene til både tekniske og ikke-tekniske målgrupper.
 
 
-
 Når disse statistke verdiene er veldig ulike tyder dette på at det er ustabile data og vanskeligere å predikere for framtidig analyse.
 Det er en positiv skjevhet mellom gjennomsnittet og median for kiloprisen av fersk laks. Da medianen er lavere enn gjennomsnittet som betyr at når det er noen uker med veldig høy kilopris trekker gjennomsnittet oppover.
 
