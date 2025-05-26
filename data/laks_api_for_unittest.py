@@ -6,7 +6,7 @@ import requests
 import pandas as pd
 from itertools import product
 
-# URL til SSB API for tabell 03024
+#URL til SSB API for tabell 03024
 API_URL = "https://data.ssb.no/api/v0/no/table/03024/"
 
 def fetch_data(api_url=API_URL):
@@ -15,7 +15,8 @@ def fetch_data(api_url=API_URL):
         "query": [],
         "response": {"format": "json-stat2"}
     }
-    response = requests.post(api_url, json=query)
+    response = requests.post(api_url, json=query) #Henter data fra API
+    #Sjekker om forespørselen var vellykket
     if response.status_code == 200:
         return response.json()
     else:
@@ -23,21 +24,25 @@ def fetch_data(api_url=API_URL):
 
 def process_data(data):
     """Prosesserer JSON-data og returnerer en formatert Pandas DataFrame."""
+    #Skiller dimensjonsnavn og verdier
     dimension_names = list(data["dimension"].keys())
     values = data["value"]
    
-
+    
+    #Oppretter en liste av kombinasjoner av dimensjoner
     dimensions = [list(data["dimension"][dim]["category"]["label"].values()) for dim in dimension_names]
+
+    #Genererer alle kombinasjoner av dimensjonsverdier
     all_combinations = list(product(*dimensions))
     
-
+    #Lager en DataFrame med riktige dimensjoner
     df = pd.DataFrame(all_combinations, columns=dimension_names)
     df["Value"] = values  
     
-
+    #Deler opp data i pivot-tabell format for å få ønsket struktur
     df_pivot = df.pivot_table(index="Tid", columns=["VareGrupper2", "ContentsCode"], values="Value", aggfunc="sum").reset_index()
     
-    
+    #Bytter ut kolonnenavn med mer lesbare navn for analyse og visualisering
     df_pivot.columns = ["År og ukenr.", "Fersk laks - Kilospris", "Fersk laks - Vekt (tonn)", "Frosset laks - Kilospris", "Frosset laks - Vekt (tonn)"]
     
     return df_pivot
