@@ -33,3 +33,8 @@ Søylediagrammet var mest effektivt for sammenligning på tvers av grupper for e
 Manglende data ble effektivt håndtert ved å bruke begge metodene, og grafene tydeliggjorde hvordan interpolering kan påvirke den langsiktige trenden, sammenlignet med fjerning av manglende data.
 
 Modellene gir en enkel, men nyttig pekepinn på hvordan prisutvikling kan påvirke eksportinntekter. Likevel er det viktig å være bevisst på at lineær regresjon forutsetter en jevn trend, og ikke fanger opp sesongvariasjoner, politiske endringer eller globale markedsforhold. For en mer presis prediksjon kunne man benyttet mer avanserte modeller som tar høyde for flere variabler.
+
+Grafen som sammenligner eksportverdi, kilopris og vekt viser at det er viktig å analysere både pris og volum, siden eksportverdi er et resultat av begge. Den understreker også at pris ikke nødvendigvis følger volum, noe som er viktig å ta med i en prediktiv modell. I en bærekraftig næring vil det være gunstig å oppnå høy verdi med lavere volum, og denne utviklingen kan tolkes som positiv.
+Grafen brukes til å forklare hvordan ulike faktorer påvirker eksportinntektene, og er nyttig for å vurdere både økonomisk og miljømessig effektivitet.
+
+Vi kan tolke fra grafene nederst i filen med prediksjon at når kiloprisen øker fører dette også til at eksportverdien øker. Dette betyr altså at pris har en klar sammenheng der prisen driver eksportverdien oppover. Selv om modellen er ganske forenklet med tanke på at predisksjonen er linær, så gir fortsatt grafene innsikt i hvordan økning i kilopris kan påvirke eksportverdien og derfor brukes som et utgangspunkt til videre planlegging.
