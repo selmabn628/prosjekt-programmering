@@ -1,6 +1,7 @@
 Oppgave 6: Prediktiv analyse
 
-I denne oppgaven ble det fokusert på prediktiv analyse ved hjelp av lineær regresjon for å forutsi fremtidige miljøforhold basert på historiske data. Oppgaven besto av flere trinn, deriblant forberedelse og rensing av dataene, samt håndtering av manglende verdier.
+I denne oppgaven bruker vi prediktiv analyse for å forutsi fremtidig eksportverdi av fersk laks basert på historiske priser. Vi benytter lineær regresjon for å identifisere sammenhengen mellom kilopris og eksportverdi, og analyserer hvordan denne modellen kan brukes til å predikere fremtidige inntekter fra lakseeksport.
+
 
 Visualiseringer og deres formål:
 
@@ -30,3 +31,5 @@ De tre typene visualiseringer – linjediagrammer, scatterplots og søylediagram
 Søylediagrammet var mest effektivt for sammenligning på tvers av grupper for et spesifikt år.
 
 Manglende data ble effektivt håndtert ved å bruke begge metodene, og grafene tydeliggjorde hvordan interpolering kan påvirke den langsiktige trenden, sammenlignet med fjerning av manglende data.
+
+Modellene gir en enkel, men nyttig pekepinn på hvordan prisutvikling kan påvirke eksportinntekter. Likevel er det viktig å være bevisst på at lineær regresjon forutsetter en jevn trend, og ikke fanger opp sesongvariasjoner, politiske endringer eller globale markedsforhold. For en mer presis prediksjon kunne man benyttet mer avanserte modeller som tar høyde for flere variabler.
