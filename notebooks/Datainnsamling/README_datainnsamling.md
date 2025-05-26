@@ -12,3 +12,6 @@ Datasettet vi har hentet viser tydelige variasjoner i eksportvolum og pris over 
 
 Historgrammet fra visualisere.original.ipynb filen viser at eksportert mengde fersk laks per uke varierer sterkt, men at det er en tendens til høyere volum rundt 5000 tonn og i intervallet 14 000–17 000 tonn. Fordelingen er ikke symmetrisk, og tyder på at enkelte perioder har ekstremt høy eksport, i motsetning ti andre perioder som har mindre eksport.
 Dette støttes av den lange halen i høyre del av grafen.
+
+I filen Valutakurs_USD_EUR_api analyserte vi forksjellem mellom valutakursene EUR/NOK og USD/NOK. 
+Ved å visualisere differansen mellom disse over tid, fikk vi innsikt i hvordan valutakursene kan påvirke lønnsomheten i ulike eksportmarkeder. En sterkere euro kan bety høyere inntekt for norsk lakseeksport til Europa sammenlignet med USA, gitt at salgsprisen i NOK er den samme. Grafen viser utviklingen av forskjellene og bidrar til å fostå risikoen ved bruk av ulik valuta til bruk i markedsstrategier.
