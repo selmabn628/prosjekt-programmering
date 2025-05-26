@@ -28,3 +28,8 @@ def hent_laksedata():
     df["Value"] = values
 
     return df
+if __name__ == "__main__":
+    df = hent_laksedata()
+    print(df.head())
+
+
