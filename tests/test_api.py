@@ -7,8 +7,8 @@ from laks_api_for_unittest import fetch_data, process_data  # Importerer funksjo
 class TestSSBAPI(unittest.TestCase):
     """
     Tester for funksjonene fetch_data() og process_data() fra laks_api_for_unittest.
-    Formålet er å validere at datainnhenting og -behandling fungerer korrekt og robust,
-    med bruk av mocking for å unngå avhengighet til eksterne API-er.
+    Formålet er å sjekke at datainnhenting og databehandling fungerer korrekt,
+    med bruk av mocking for å unngå at man er avhengig av eksterne API-er. 
     """
 
     @patch("laks_api_for_unittest.requests.post")
@@ -20,7 +20,7 @@ class TestSSBAPI(unittest.TestCase):
         Formål:
         Verifisere at funksjonen returnerer riktig struktur når API-kallet lykkes.
 
-        Mock brukes for å simulere en vellykket respons fra SSB (oppgave 2).
+        Mockdata/kuntstig data brukes for å simulere en vellykket respons fra SSB; oppgave 2.
 
         Viktig fordi:
         Vi tester uten å være avhengig av internett eller eksternt API,
@@ -49,17 +49,14 @@ class TestSSBAPI(unittest.TestCase):
         Test: test_process_data_structure
         Tester funksjonen process_data() fra laks_api_for_unittest.py.
         
-        Formål:
-        Sikre at JSON-data blir prosessert til en DataFrame med riktig struktur.
+        Formålet er å sikre at JSON-data blir prosessert til en DataFrame med riktig struktur og kolonnenavn.
 
-        Mocking:
-        Ja – bruker statisk mockdata (manuelt laget test-JSON).
+        Det er brukt statisk mockdata for å simulere API-responsen som er manuelt laget. 
+        Testdataene er i JSON-format og er laget for hånd for å ligne den samme strukturen som API-et vanligvis gir tilbake.
 
-        Oppgave:
-        Oppgave 3 – strukturering og klargjøring av data.
-
-        Viktig fordi:
-        Data må være riktig formatert før visualisering og analyse.
+        Oppgave 3 handler om strukturering og klargjøring av data.
+        Dette er viktig for at man skal kunne visualisere og analysere dataene videre på en effektiv måte.
+        
         """
         mock_data = {
             "dimension": {

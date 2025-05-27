@@ -7,8 +7,8 @@ import ssb_henting  # Sørg for at denne ligger i prosjektroten
 class TestHentLaksedata(unittest.TestCase):
     """
     Tester for funksjonen hent_laksedata() i ssb_henting.py.
-    Formål: Verifisere at både suksess og feilsituasjoner håndteres riktig ved kall mot SSB sitt API.
-    Oppgaver: Relevante for oppgave 2 og 3 – datainnhenting og feilhåndtering.
+    Formålet er å verifisere at både riktige situasjoner og feilsituasjoner håndteres riktig ved kall for SSB sitt API.
+    Dette er relevant for oppgave 2 og 3.
     """
 
     @patch("ssb_henting.requests.post")
@@ -18,15 +18,11 @@ class TestHentLaksedata(unittest.TestCase):
 
         Tester hent_laksedata() fra ssb_henting.py.
 
-        Formål:
-        Sikre at gyldig data gir en DataFrame med riktig format og innhold.
+        Formålet er å sikre at gyldig data gir en DataFrame med riktig format og innhold.
 
-        Mock brukes:
-        Ja – simulerer en gyldig respons fra SSB API (oppgave 2 og 3).
+        Mock brukes for å simulere en vellykket respons fra SSB; oppgave 2 og 3.
 
-        Viktig fordi:
-        Suksessfulle kall må returnere komplette og brukbare data,
-        som skal kunne brukes videre til analyse og visualisering.
+        Dette er viktig fordi suksessfulle kall må returnere komplette og brukbare data, som skal kunne brukes videre til analyse og visualisering.
         """
 
         # Simulert svar fra SSB API
@@ -57,11 +53,9 @@ class TestHentLaksedata(unittest.TestCase):
         Sikre at funksjonen kaster en Exception hvis API feiler,
         f.eks. ved statuskode 500 eller annen feilmelding.
 
-        Mock brukes:
-        Ja – simulerer feilrespons fra SSB med statuskode 500.
+        Mock brukes til å simulere feilrespons fra SSB med statuskode 500.
 
-        Viktig fordi:
-        Koden må håndtere feil i API på en kontrollert og forutsigbar måte (oppgave 2).
+        Dette er viktig fordi koden må håndtere feil i API på en kontrollert måte; oppgave 2.
         """
 
         mock_post.return_value.status_code = 500

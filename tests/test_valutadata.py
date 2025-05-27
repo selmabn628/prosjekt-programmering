@@ -8,15 +8,12 @@ def test_hent_valutakurs_usd():
 
     Tester funksjonen hent_valutakurs("USD.NOK", "USD/NOK") fra valutadata.py.
 
-    Mocking:
-    Ja – API-kall til valutakilde er mocket for å unngå eksternt kall.
+    Ja det er brukt mockdata/ikke ekte levende API data som er de samme hver gang testen kjøres.
 
-    Bruksområde:
-    Oppgave 4 – Estimering av CO₂-utslipp i kroner.
+    Dette brukes for oppgave 4.
 
-    Viktig fordi:
-    Det lar oss teste hvordan funksjonen håndterer og strukturerer API-respons.
-    Sikrer at USD-data hentes riktig og lagres i en DataFrame med forventede kolonner.
+    Dette er viktig fordi det lar oss teste hvordan funksjonen håndterer og strukturerer API-responsen.
+    I tillegg sikrer det at USD-data hentes riktig og lagres i en tabell med riktige kolonner.
     """
 
     df = hent_valutakurs("USD.NOK", "USD/NOK")
@@ -31,15 +28,12 @@ def test_hent_valutakurs_eur():
 
     Tester funksjonen hent_valutakurs("EUR.NOK", "EUR/NOK") fra valutadata.py.
 
-    Mocking:
-    Ja – API-responsen er simulert.
+    API-responsen er simulert ved hjelp av statiske mockdata. Dette gjør det mulig å kjøre uten tilgang til nettverket.
 
-    Bruksområde:
-    Oppgave 4 – Bruk av valutadata i analysen.
+    Brukes for oppgave 4. 
 
-    Viktig fordi:
-    Sikrer at vi får korrekte og brukbare valutadata uten avhengighet til nett,
-    og at strukturen på returdataene er i riktig format for videre beregning.
+    Dette sikrer at vi får korrekte og brukbare valutadata uten å være avhgengig av nettverkstilkobling og at strukturen på dataene som returneres er i riktig format. 
+    Dette er slik at man effektivt kan bruke dataene videre i analyser og visualiseringer.
     """
 
     df = hent_valutakurs("EUR.NOK", "EUR/NOK")
