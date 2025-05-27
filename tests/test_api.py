@@ -3,11 +3,29 @@ import pandas as pd
 from unittest.mock import patch
 from laks_api_for_unittest import fetch_data, process_data  # Importerer funksjonene
 
+
 class TestSSBAPI(unittest.TestCase):
+    """
+    Tester for funksjonene fetch_data() og process_data() fra laks_api_for_unittest.
+    Formålet er å validere at datainnhenting og -behandling fungerer korrekt og robust,
+    med bruk av mocking for å unngå avhengighet til eksterne API-er.
+    """
 
     @patch("laks_api_for_unittest.requests.post")
     def test_fetch_data_success(self, mock_post):
-        """ Tester om API-et returnerer en gyldig JSON-struktur ved å mocke API-kallet """
+        """
+        Test: test_fetch_data_success
+        Tester funksjonen fetch_data() fra laks_api_for_unittest.py.
+        
+        Formål:
+        Verifisere at funksjonen returnerer riktig struktur når API-kallet lykkes.
+
+        Mock brukes for å simulere en vellykket respons fra SSB (oppgave 2).
+
+        Viktig fordi:
+        Vi tester uten å være avhengig av internett eller eksternt API,
+        og sikrer at funksjonen fungerer i kontrollerte forhold.
+        """
         mock_response = {
             "dimension": {
                 "Tid": {"category": {"label": {"2025U08": "2025U08", "2025U09": "2025U09"}}},
@@ -27,7 +45,22 @@ class TestSSBAPI(unittest.TestCase):
         self.assertIn("value", data)
 
     def test_process_data_structure(self):
-        """ Tester om data blir prosessert korrekt til en Pandas DataFrame """
+        """
+        Test: test_process_data_structure
+        Tester funksjonen process_data() fra laks_api_for_unittest.py.
+        
+        Formål:
+        Sikre at JSON-data blir prosessert til en DataFrame med riktig struktur.
+
+        Mocking:
+        Ja – bruker statisk mockdata (manuelt laget test-JSON).
+
+        Oppgave:
+        Oppgave 3 – strukturering og klargjøring av data.
+
+        Viktig fordi:
+        Data må være riktig formatert før visualisering og analyse.
+        """
         mock_data = {
             "dimension": {
                 "Tid": {"category": {"label": {"2025U08": "2025U08", "2025U09": "2025U09"}}},
@@ -43,21 +76,15 @@ class TestSSBAPI(unittest.TestCase):
         self.assertIsInstance(df, pd.DataFrame)
 
         # Sjekker at de forventede kolonnene finnes
-        expected_columns = ["År og ukenr.", "Fersk laks - Kilospris", "Fersk laks - Vekt (tonn)", "Frosset laks - Kilospris", "Frosset laks - Vekt (tonn)"]
+        expected_columns = [
+            "År og ukenr.",
+            "Fersk laks - Kilospris",
+            "Fersk laks - Vekt (tonn)",
+            "Frosset laks - Kilospris",
+            "Frosset laks - Vekt (tonn)"
+        ]
         self.assertListEqual(list(df.columns), expected_columns)
+
 
 if __name__ == '__main__':
     unittest.main()
-
-# Test: test_fetch_data_success
-# Tester funksjonen fetch_data() fra laks_api_for_unittest.py.
-# Formål: Verifisere at funksjonen returnerer riktig struktur når API-kallet lykkes.
-# Mock brukes for å simulere en vellykket respons fra SSB (oppgave 2).
-# Viktig fordi: Vi tester uten å være avhengig av internett eller API-et.
-
-# Test: test_process_data_structure
-# Tester funksjonen process_data() fra laks_api_for_unittest.py.
-# Formål: Sikre at JSON-data blir prosessert til en DataFrame med riktig struktur.
-# Mocking: Ja – bruker statisk mockdata (manuelt laget test-JSON).
-# Oppgave: Oppgave 3 – strukturering og klargjøring av data.
-# Viktig fordi: Data må være riktig formatert før visualisering og analyse.
