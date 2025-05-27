@@ -1,4 +1,4 @@
-Oppgave 5: Visualisering
+Visualisering:
 
 Spesifikke typer visualiseringer:
 
