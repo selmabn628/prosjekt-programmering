@@ -17,8 +17,7 @@ class TestSSBAPI(unittest.TestCase):
         Test: test_fetch_data_success
         Tester funksjonen fetch_data() fra laks_api_for_unittest.py.
         
-        Formål:
-        Verifisere at funksjonen returnerer riktig struktur når API-kallet lykkes.
+        Formålet er å verifisere at funksjonen returnerer riktig struktur når API-kallet lykkes.
 
         Mockdata/kuntstig data brukes for å simulere en vellykket respons fra SSB; oppgave 2.
 
