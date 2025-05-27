@@ -40,3 +40,14 @@ class TestHentLaksedata(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
+# Test: test_hent_laksedata_success
+# Tester hent_laksedata() fra ssb_henting.py.
+# Formål: Sikre at gyldig data gir en DataFrame med riktig format og innhold.
+# Mock brukes for å simulere gyldig respons fra SSB (oppgave 2 og 3).
+# Viktig fordi: Suksessfulle kall må returnere komplette og brukbare data.
+
+# Test: test_hent_laksedata_failure
+# Tester feiltilfelle for hent_laksedata().
+# Formål: Sjekker at funksjonen kaster en Exception hvis API feiler.
+# Mock brukes for å simulere feil (statuskode 500) fra SSB.
+# Viktig fordi: Koden må håndtere feil i API på en kontrollert måte (oppgave 2).

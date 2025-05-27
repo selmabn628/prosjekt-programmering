@@ -48,3 +48,16 @@ class TestSSBAPI(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+# Test: test_fetch_data_success
+# Tester funksjonen fetch_data() fra laks_api_for_unittest.py.
+# Formål: Verifisere at funksjonen returnerer riktig struktur når API-kallet lykkes.
+# Mock brukes for å simulere en vellykket respons fra SSB (oppgave 2).
+# Viktig fordi: Vi tester uten å være avhengig av internett eller API-et.
+
+# Test: test_process_data_structure
+# Tester funksjonen process_data() fra laks_api_for_unittest.py.
+# Formål: Sikre at JSON-data blir prosessert til en DataFrame med riktig struktur.
+# Mocking: Ja – bruker statisk mockdata (manuelt laget test-JSON).
+# Oppgave: Oppgave 3 – strukturering og klargjøring av data.
+# Viktig fordi: Data må være riktig formatert før visualisering og analyse.
